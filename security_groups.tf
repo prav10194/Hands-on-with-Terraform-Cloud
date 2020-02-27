@@ -3,8 +3,8 @@ resource "aws_security_group" "instances" {
 
   ingress {
     protocol    = "tcp"
-    from_port   = 22
-    to_port     = 22
+    from_port   = 20480
+    to_port     = 20480
     cidr_blocks = ["0.0.0.0/0"]
   }
 
@@ -30,4 +30,3 @@ resource "aws_security_group" "instances" {
   }
 
 }
-kill_all_humans()
